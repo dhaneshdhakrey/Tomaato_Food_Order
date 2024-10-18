@@ -7,7 +7,7 @@ function SearchBar(){
     return(
         <div>
             <div classes='AdressBar'>
-
+                {/* info ABout adres */}
             </div>
             <div classes='SearchBox'>
             <label>
