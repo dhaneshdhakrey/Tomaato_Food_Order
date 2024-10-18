@@ -1,7 +1,10 @@
+import React from "react";
+import MainCont from "./Components/MainDIv/MainCont";
 function App() {
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <MainCont/>
+      
     </div>
   );
 }
