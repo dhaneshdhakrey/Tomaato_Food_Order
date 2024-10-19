@@ -5,12 +5,18 @@ const BUTTON_CLASS = "bg-secondary text-secondary-foreground hover:bg-secondary/
 const TEXT_CLASS = "text-muted-foreground border border-border rounded-lg  bg-white";
 
 const Header = () => {
+    function searchHandler(e){
+        console.log(e.target.value);
+        
+    }
     return (
         <div className="flex flex-col items-center justify-center p-4 bg-background mx-10 gap-6">
             <div className="flex items-center space-x-4 w-full justify-center ">
                 <span className='font-bold text-3xl'>TOMAATO</span>
                 <span className='border border-border rounded-lg p-4 shadow-lg'>Dinnedevarapadu, Q2J</span>
-            <input className={INPUT_CLASS} type="text" placeholder="Search for restaurant, cuisine or dish" />
+            <label>
+                <input className='border border-border rounded-lg p-4 shadow-lg' type='text' onChange={searchHandler}/>
+            </label>
             <div>
                 <img src='https://b.zmtcdn.com/images/user_avatars/mug_2x.png?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A' className='w-12 h-12' alt='pic'></img>
             </div>
