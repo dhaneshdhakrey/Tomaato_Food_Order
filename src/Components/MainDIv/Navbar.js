@@ -1,14 +1,20 @@
 import React from "react";
 import SearchBar from "./SearchBar";
-function Navbar(){
-   
+import classes from './Navbar.module.css';
+
+function Navbar() {
     return (
-        <div>
-           This is Navabr 
-           <SearchBar>
-            l
-           </SearchBar>
+        <div className={classes.Navbar}>
+            <span>Tomaato</span>
+            <div className={classes.SearchBar}>
+                <SearchBar />
+            </div>
+            <div>
+                <button>Sign In</button>
+                shivam
+            </div>
         </div>
-    )
+    );
 }
+
 export default Navbar;
