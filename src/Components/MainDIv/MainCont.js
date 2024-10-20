@@ -1,8 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar/Navbar";
 import FilterCont from "./FilterCont/FilterCont";
-import FoodCont from "./FoodCont/FoodCont";
-import Brand from "./FoodCont/Brand";
+import FoodCont from "./FoodCont/FoodCont.js";
 
 function MainCont(){
     return (
@@ -10,7 +9,7 @@ function MainCont(){
             <Navbar/>
             <FilterCont/>
             <FoodCont/>
-            <Brand/>
+            
         </React.Fragment>
     )
 }
