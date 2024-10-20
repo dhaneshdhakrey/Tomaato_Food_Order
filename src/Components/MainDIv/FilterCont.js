@@ -3,7 +3,7 @@ const BUTTON_CLASS = "bg-secondary text-secondary-foreground hover:bg-secondary/
 
 function FilterCont(){
     return (
-        <div className='flter continer flex justify-center flex-row gap-3 ml-[-56.25rem]'>
+        <div className='flter continer flex justify-center flex-row gap-3 ml-[-56.25rem] mb-5'>
             <button className={BUTTON_CLASS}>Filters</button>
             <div className ='Actual filter'></div>
             <button className={BUTTON_CLASS}>Pure veg</button>
