@@ -5,10 +5,10 @@ import Brand from './Brand.js';
 function FoodCont() {
     return (
         <div>
-            <Brand/>
             <HcFoodCont/> {/* Capitalized here as well */}
+            <Brand/>
         </div>
     )
 }
-
+ 
 export default FoodCont;
