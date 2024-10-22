@@ -1,12 +1,22 @@
-import React from 'react';
-import HcFoodCont from './HcFoodCont'; // Capitalized
+import React ,{useState} from 'react';
+import HcFoodCont from './HcFoodCont'; 
 import Brand from './Brand.js';
 
 function FoodCont() {
+   let [currentTotal,setTotal]= useState(0);
+    let totalAmount=0;
+    function addItemHandler(e){
+        console.log(e.target.value,e.target.name);
+        let tempnum=parseInt(e.target.value,10);
+       // totalAmount=totalAmount+tempnum;
+        
+        setTotal(currentTotal+tempnum);
+    }
     return (
         <div>
-            <HcFoodCont/> {/* Capitalized here as well */}
             <Brand/>
+            <HcFoodCont addItem={addItemHandler}/> 
+            PAY={currentTotal};
         </div>
     )
 }
