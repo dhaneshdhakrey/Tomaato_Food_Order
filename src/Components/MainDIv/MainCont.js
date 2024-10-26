@@ -3,12 +3,14 @@ import Navbar from "./Navbar/Navbar";
 import FilterCont from "./FilterCont/FilterCont";
 import FoodCont from "./FoodCont/FoodCont.js";
 import Card from "./FoodCont/Card.js";
+import Cart from "./Navbar/Cart.js";
 
 
 function MainCont(){
     return (
         <React.Fragment>
             <Navbar/>
+             <Cart/> 
             <FilterCont/>
             <FoodCont/>
             <div className="flex flex-row items-center p-4 bg-background mx-[15%] gap-10"> 
