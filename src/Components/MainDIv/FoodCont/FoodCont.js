@@ -2,14 +2,13 @@ import React ,{useState} from 'react';
 import HcFoodCont from './HcFoodCont.js'; 
 import Brand from './Brand.js';
 
-function FoodCont() {
+function FoodCont(props) {
    let [currentTotal,setTotal]= useState(0);
-    //let totalAmount=0;
+   
     function addItemHandler(e){
-        console.log(e.target.value,e.target.name);
+        //console.log(e.target.value,e.target.name);
         let tempnum=parseInt(e.target.value,10);
-       // totalAmount=totalAmount+tempnum;
-        
+        props.addItemMainCont(e);
         setTotal(currentTotal+tempnum);
     }
     return (
